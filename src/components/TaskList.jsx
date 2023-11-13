@@ -10,13 +10,13 @@ const TaskList = () => {
   const {tasks} = useContext(TaskContext)
 
     if(tasks.length===0){
-        return <h1>No hay Tareas</h1>
+        return <h1 className="text-white text-center m-10 font-bold text-5xl">No hay Tareas</h1>
     }
 
 
 
   return (
-    <div>
+    <div className="grid grid-cols-3 gap-4">
         {tasks.map(t => (
             <TaskCard key={t.id} t={t}/>
         ))}
