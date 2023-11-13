@@ -1,8 +1,8 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  color: #242424;
-  background-color: #fff;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 
 body { 
   margin: 0;
